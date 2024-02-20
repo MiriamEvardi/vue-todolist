@@ -16,7 +16,7 @@ li {
 }
 
 .done {
-    text-decoration: line-through;
+    text-decoration: line-through rgb(187, 0, 255);
 }
 
 span,
@@ -30,4 +30,8 @@ li {
     vertical-align: middle;
     padding-bottom: 2px;
     cursor: pointer;
+}
+
+.btn {
+    background-color: blueviolet;
 }
