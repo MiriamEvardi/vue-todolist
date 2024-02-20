@@ -4,6 +4,8 @@ createApp({
     data() {
         return {
 
+            newTask: '',
+
             tasks: [
                 {
                     text: "Fare la spesa",
@@ -19,6 +21,13 @@ createApp({
                 }
             ]
 
+        }
+    },
+
+    methods: {
+
+        deleteTask(taskIndex) {
+            this.tasks.splice(taskIndex, 1);
         }
     },
 

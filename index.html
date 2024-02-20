@@ -29,18 +29,20 @@
 
             <ul class=" m-auto p-0 mt-4">
 
-                <li class="py-2 px-3 d-flex justify-content-between align-items-center" v-for="currentTasks in tasks"
+                <li class="py-2 px-3 d-flex justify-content-between align-items-center"
+                    v-for="(currentTasks, index) in tasks"
                     :class="currentTasks.done == true ? currentTasks.text = 'done' : ''">
                     {{currentTasks.text}}
 
-                    <span><i class="fa-solid fa-xmark text-danger"></i></span>
+                    <span @click="deleteTask(index)" class="text-center px-1 rounded-5">
+                        <i class="fa-solid fa-xmark text-danger fs-4"></i></span>
                 </li>
 
             </ul>
 
 
             <div class="input-group justify-content-center mt-4">
-                <input type="text">
+                <input class=" input-group-text" type="text" v-model="newTask" placeholder="Inserisci una nuova task">
                 <button>Submit</button>
 
             </div>
