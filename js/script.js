@@ -28,6 +28,15 @@ createApp({
 
         deleteTask(taskIndex) {
             this.tasks.splice(taskIndex, 1);
+        },
+
+        addNewTask() {
+            this.tasks.push({
+                text: this.newTask,
+                done: false
+            });
+
+            this.newTask = '';
         }
     },
 

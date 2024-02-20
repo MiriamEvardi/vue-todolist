@@ -40,11 +40,13 @@
 
             </ul>
 
+            <div class="py-4 ">
+                <div class="input-group justify-content-center mt-4">
+                    <input type="text" v-model="newTask" placeholder="Inserisci una nuova task"
+                        aria-describedby="add-task">
+                    <button @click="addNewTask()" id="add-task">Submit</button>
 
-            <div class="input-group justify-content-center mt-4">
-                <input class=" input-group-text" type="text" v-model="newTask" placeholder="Inserisci una nuova task">
-                <button>Submit</button>
-
+                </div>
             </div>
 
         </div>
