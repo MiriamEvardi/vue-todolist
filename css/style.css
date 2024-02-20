@@ -1,0 +1,9 @@
+ul {
+    max-width: 800px;
+    border: black 1px solid;
+}
+
+li {
+    list-style: none;
+    border: blue 1px solid;
+}
