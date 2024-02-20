@@ -1,23 +1,33 @@
+body {
+    background-color: rgb(211, 173, 246);
+}
+
 ul {
     max-width: 800px;
-    border: black 1px solid;
+    border: rgba(165, 10, 255, 0.529) 1px solid;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 li {
     list-style: none;
-    border: blue 1px solid;
+    cursor: pointer;
+    user-select: none;
 }
 
 .done {
     text-decoration: line-through;
 }
 
-span {
-    border: solid 1px black;
+span,
+li {
+    border: solid 1px rgba(165, 10, 255, 0.529);
+    background-color: rgb(232, 208, 255);
 }
 
 .fa-xmark {
     text-align: center;
     vertical-align: middle;
     padding-bottom: 2px;
+    cursor: pointer;
 }

@@ -25,7 +25,7 @@
     <div id="app">
 
         <div class="container">
-            <h1 class="text-center pt-3 display-3">MY TO DO LIST</h1>
+            <h1 class="text-center pt-3 display-3 text-white">MY TO DO LIST</h1>
 
             <ul class=" m-auto p-0 mt-4">
 
@@ -42,9 +42,9 @@
 
             <div class="py-4 " id="add-task">
                 <div class="input-group justify-content-center mt-4">
-                    <input type="text" v-model="newTask" placeholder="Inserisci una nuova task"
+                    <input class="input-group-text" type="text" v-model="newTask" placeholder="Inserisci una nuova task"
                         aria-describedby="add-task" @keyup.enter="addNewTask()">
-                    <button @click="addNewTask()">Submit</button>
+                    <button class="btn" @click="addNewTask()">Submit</button>
 
                 </div>
             </div>

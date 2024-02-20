@@ -31,12 +31,18 @@ createApp({
         },
 
         addNewTask() {
-            this.tasks.push({
-                text: this.newTask,
-                done: false
-            });
 
-            this.newTask = '';
+            if (this.newTask !== '') {
+                this.tasks.push({
+                    text: this.newTask,
+                    done: false
+                });
+
+                this.newTask = '';
+            } else {
+                alert("Inserire una task")
+            }
+
         },
 
         toggleTask(taskIndex) {
