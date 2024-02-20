@@ -7,3 +7,7 @@ li {
     list-style: none;
     border: blue 1px solid;
 }
+
+.done {
+    text-decoration: line-through;
+}

@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
 
-            toDoList: [
+            tasks: [
                 {
                     text: "Fare la spesa",
                     done: false
