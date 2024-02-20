@@ -37,6 +37,10 @@ createApp({
             });
 
             this.newTask = '';
+        },
+
+        toggleTask(taskIndex) {
+            this.tasks[taskIndex].done = !this.tasks[taskIndex].done
         }
     },
 
